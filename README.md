@@ -27,6 +27,17 @@ This repository documents my learning process with object detection backbones. T
   * Ran inference on images and inspected detected classes and bounding boxes.
 * Notes: This marks the starting point with classical region-based detectors, contrasting with YOLO’s single-shot approach.
 
+### 3. YOLOv11 – Custom Dataset Training (Rock-Paper-Scissors)
+
+* Notebook: `YOLOv11_trained_models/custom-dataset-training-yolov11.ipynb`
+* Objective: Train YOLOv11 on a simple 3-class dataset (Rock, Paper, Scissors) to explore custom dataset training.
+* Tasks performed:
+  * Created a dataset YAML for train/val/test splits.
+  * Trained YOLOv11m for 25 epochs with Kaggle GPU runtime.
+  * Evaluated performance (mAP50 ≈ 0.85+ by epoch 13).
+  * Exported trained weights to ONNX, TensorRT Engine, and OpenVINO formats.
+* Notes: This experiment shows how pretrained YOLO weights can adapt quickly to a small dataset, reaching strong accuracy within ~10 epochs.
+
 ---
 
 ## Planned Work
